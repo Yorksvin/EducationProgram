@@ -285,6 +285,27 @@ def TableFOS( dis, comp ):
       s += TableThemeInFOS( dis, p, compdis, zun )
   return s
 
+def FOSElementString( f, n ):
+  res = "### 5.2." + str(n) + ". " + f["Title"] + "\n\n"
+  if isinstance( f["List"][0], str ):
+    for i in range( len( f["List"] ) ):
+      res += str( i + 1 ) + ". " + f["List"][i] + "\n"
+  elif isinstance( f["List"][0], list ) and isinstance( f["List"][0][1], str ):
+# БИЛЕТЫ К ЭКЗАМЕНУ
+    for i in range( len( f["List"] ) ):
+      res += f["Unit"] + " № " + str( i + 1 ) + "\n\n"
+      for j in range( len( f["List"][i] ) ):
+        res += str( j + 1 ) + ". " + f["List"][i][j] + "\n\n"
+  elif isinstance( f["List"][0], list ) and isinstance( f["List"][0][1], list ):
+# ВАРИАНТЫ КОНТРОЛЬНЫХ
+    for i in range( len( f["List"] ) ):
+      res += "#### " + f["List"][i][0] + "\n"
+      for j in range( 1, len( f["List"][i] ) ):
+        res += f["Unit"] + " № " + str( j ) + "\n"
+        for k in range( len( f["List"][i][j] ) ):
+          res += str( k + 1 ) + ". " + f["List"][i][j][k] + "\n"
+        res += "\n"
+  return res
 
 def StringForDisc( disfilename, compfilename ):
   INP1 = open( disfilename, "r", encoding = "utf-8" )
@@ -333,13 +354,12 @@ def StringForDisc( disfilename, compfilename ):
   res += "\n\n## 5.2. Типовые контрольные задания или иные материалы, необходимые для оценки знаний, умений, навыков и (или) опыта деятельности, характеризующие этапы формирования компетенций в процессе освоения образовательной программы\n"
   n = 1
   for f in dis["FOS"]:
-    res += "### 5.2." + str(n) + ". " + f["Title"] + "\n\n"
-    for i in range( len( f["List"] ) ):
-      res += str( i + 1 ) + ". " + f["List"][i] + "\n"
-    res += "#### 5.2." + str(n) + ".1. Критерии оценивания\n"
-    res += f["Criteria"]
-    res += "\n#### 5.2." + str(n) + ".2. Шкалы оценивания\n"
-    res += f["Scale"]+"\n\n"
+    res += FOSElementString( f, n )
+    if f["Criteria"] != "" and f["Scale"] != "":
+      res += "#### 5.2." + str(n) + ".1. Критерии оценивания\n"
+      res += f["Criteria"]
+      res += "\n#### 5.2." + str(n) + ".2. Шкалы оценивания\n"
+      res += f["Scale"]+"\n\n"
     n += 1
   res += "# 6. УЧЕБНО-МЕТОДИЧЕСКОЕ И ИНФОРМАЦИОННОЕ ОБЕСПЕЧЕНИЕ УЧЕБНОЙ ДИСЦИПЛИНЫ\n"
   n = 1
