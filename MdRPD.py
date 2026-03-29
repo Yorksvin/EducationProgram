@@ -155,7 +155,10 @@ def TableThemeInStructure( dis, p ):
   numsub = 1
   for sub in sec["Subsection"]:
     s += "|" + str(p) + "." + str( numsub ) + "|" + sub["Title"] + "|" + Interval( sub["WeekBegin"], sub["Weeks"] ) + "|" + str( sub["LectureHours"] ) + "|" + str( sub["PracticeHours"] ) + "|"
-    s += str( sub[ "LabHours" ] ) + "|" + str( sub["SelfWork" ] ) + "|" + sub["Control"] + "| |\n"
+    s += str( sub[ "LabHours" ] ) + "|" + str( sub["SelfWork" ] ) + "|" + sub["Control"] + "| "
+    if sub["MaxBall"] != "": s += str( sub["MaxBall"] )
+    s +=" |\n"
+    numsub += 1
   return s
 
 def TableThemeInSectionsLectures( dis, p ):
@@ -293,7 +296,7 @@ def FOSElementString( f, n ):
   elif isinstance( f["List"][0], list ) and isinstance( f["List"][0][1], str ):
 # БИЛЕТЫ К ЭКЗАМЕНУ
     for i in range( len( f["List"] ) ):
-      res += f["Unit"] + " № " + str( i + 1 ) + "\n\n"
+      if f["Unit"] != "": res += f["Unit"] + " № " + str( i + 1 ) + "\n\n"
       for j in range( len( f["List"][i] ) ):
         res += str( j + 1 ) + ". " + f["List"][i][j] + "\n\n"
   elif isinstance( f["List"][0], list ) and isinstance( f["List"][0][1], list ):
@@ -301,7 +304,7 @@ def FOSElementString( f, n ):
     for i in range( len( f["List"] ) ):
       res += "#### " + f["List"][i][0] + "\n"
       for j in range( 1, len( f["List"][i] ) ):
-        res += f["Unit"] + " № " + str( j ) + "\n"
+        if f["Unit"] != "": res += f["Unit"] + " № " + str( j ) + "\n"
         for k in range( len( f["List"][i][j] ) ):
           res += str( k + 1 ) + ". " + f["List"][i][j][k] + "\n"
         res += "\n"
