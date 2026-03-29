@@ -6,8 +6,8 @@
   "Degree":"магистр",
   "Competence":["УК-1", "ОПК-2", "ПК-2"],
   "Semester":[
-    {"Id":1,"ZET":3,"VolumeHours":108,"LecturesHours":16,"PracticeHours":16,"LaboratoryHours":0,"PrivateWork":40,"ControlForm":"Экзамен"},
-    {"Id":2,"ZET":3,"VolumeHours":108,"LecturesHours":0,"PracticeHours":16,"LaboratoryHours":0,"PrivateWork":56,"ControlForm":"Экзамен"}
+    {"Id":1,"ZET":3,"VolumeHours":108,"LecturesHours":16,"PracticeHours":16,"LaboratoryHours":0,"SelfWork":40,"ControlForm":"Экзамен"},
+    {"Id":2,"ZET":3,"VolumeHours":108,"LecturesHours":0,"PracticeHours":16,"LaboratoryHours":0,"SelfWork":56,"ControlForm":"Экзамен"}
   ],
   "Annote":"",
   "Aims":"Целью освоения дисциплины является изучение программно-аппаратной технологии CUDA для современных массивно-параллельных процессоров компании NVIDIA и приобретение навыков применения данной технологии для решения различных задач прикладной математики.\n\nЗадачей курса является приобретение студентами профессиональных компетенций, необходимых для прикладного программирования на гибридных вычислительных системах с помощью языков С/С++ и CUDA C.",

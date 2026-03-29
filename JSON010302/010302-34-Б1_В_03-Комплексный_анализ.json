@@ -6,8 +6,8 @@
   "Degree":"бакалавр",
   "Competence":["ПК-2"],
   "Semester":[
-    {"Id":5,"ZET":2,"VolumeHours":72,"LecturesHours":16,"PracticeHours":32,"LaboratoryHours":0,"PrivateWork":24,"ControlForm":"Зачёт"},
-    {"Id":6,"ZET":3,"VolumeHours":108,"LecturesHours":16,"PracticeHours":32,"LaboratoryHours":0,"PrivateWork":24,"ControlForm":"Экзамен"}
+    {"Id":5,"ZET":2,"VolumeHours":72,"LecturesHours":16,"PracticeHours":32,"LaboratoryHours":0,"SelfWork":24,"ControlForm":"Зачёт"},
+    {"Id":6,"ZET":3,"VolumeHours":108,"LecturesHours":16,"PracticeHours":32,"LaboratoryHours":0,"SelfWork":24,"ControlForm":"Экзамен"}
   ],
   "Annote":"",
   "Aims":"Цель изучения дисциплины «Теория функций комплексного переменного»: повышение уровня фундаментальной подготовки по математике, обучение основным понятиям и методам теории функций комплексного переменного, применяемых при решении фундаментальных и прикладных задач в области математического анализа и функционального анализа, дифференциальных уравнений и уравнений математической физики, физики и механики. ",

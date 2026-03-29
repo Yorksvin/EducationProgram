@@ -98,21 +98,21 @@ def TableHours( dis ):
       itogo.append( sem["LecturesHours"] )
       itogo.append( sem["PracticeHours"] )
       itogo.append( sem["LaboratoryHours"] )
-      itogo.append( sem["PrivateWork"] )
+      itogo.append( sem["SelfWork"] )
     else:
       itogo[0] += sem["ZET"]
       itogo[1] += sem["VolumeHours"]
       itogo[2] += sem["LecturesHours"]
       itogo[3] += sem["PracticeHours"]
       itogo[4] += sem["LaboratoryHours"]
-      itogo[5] += sem["PrivateWork"]
+      itogo[5] += sem["SelfWork"]
     s += "%i&&" %( sem["Id"] )
     s += "%s&" %( StrOfInt( sem["ZET"] ) )
     s += "%s&" %( StrOfInt( sem["VolumeHours"] ) )
     s += "%s&" %( StrOfInt( sem["LecturesHours"] ) )
     s += "%s&" %( StrOfInt( sem["PracticeHours"] ) )
     s += "%s&" %( StrOfInt( sem["LaboratoryHours"] ) )
-    s += "%s&&" %( StrOfInt( sem["PrivateWork"] ) )
+    s += "%s&&" %( StrOfInt( sem["SelfWork"] ) )
     s += "%s\\\\\\hline\n" %( sem["ControlForm"][0:3] )
   s += "{\\bf ИТОГО}&&{\\bf %s}&" %( StrOfInt( itogo[0] ) )
   s += "{\\bf %s}&" %( StrOfInt( itogo[1]  ) )

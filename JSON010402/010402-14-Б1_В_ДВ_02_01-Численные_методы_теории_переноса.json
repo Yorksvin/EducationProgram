@@ -6,8 +6,8 @@
   "Degree":"магистр",
   "Competence":["ПК-1", "ПК-6", "ПК-7"],
   "Semester":[
-    {"Id":2,"ZET":3,"VolumeHours":108,"LecturesHours":0,"PracticeHours":32,"LaboratoryHours":0,"PrivateWork":76,"ControlForm":"Зачёт"},
-    {"Id":3,"ZET":3,"VolumeHours":108,"LecturesHours":0,"PracticeHours":32,"LaboratoryHours":0,"PrivateWork":49,"ControlForm":"Экзамен"}
+    {"Id":2,"ZET":3,"VolumeHours":108,"LecturesHours":0,"PracticeHours":32,"LaboratoryHours":0,"SelfWork":76,"ControlForm":"Зачёт"},
+    {"Id":3,"ZET":3,"VolumeHours":108,"LecturesHours":0,"PracticeHours":32,"LaboratoryHours":0,"SelfWork":49,"ControlForm":"Экзамен"}
   ],
   "Annote":"",
   "Aims":"Цель дисциплины: ознакомление студентов с основными классами задач переноса частиц и их взаимодействия со средой. Обучение основным методам разностной аппроксимации этих задач, технологиям теоретического анализа свойств соответствующих разностных схем, прямым и итерационным методам решения получающихся систем алгебраических уравнений и методам исследования их свойств.",

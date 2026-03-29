@@ -6,7 +6,7 @@
   "Degree":"магистр",
   "Competence":["ОПК-1", "ПК-5"],
   "Semester":[
-    {"Id":3,"ZET":3,"VolumeHours":108,"LecturesHours":32,"PracticeHours":32,"LaboratoryHours":0,"PrivateWork":44,"ControlForm":"Зачёт"}
+    {"Id":3,"ZET":3,"VolumeHours":108,"LecturesHours":32,"PracticeHours":32,"LaboratoryHours":0,"SelfWork":44,"ControlForm":"Зачёт"}
   ],
   "Annote":"",
   "Aims":"Цель дисциплины - получение знаний об основах построения конечно-разностных методик в рамках подхода механики сплошной среды, установление связи исследуемых теоретических задач с практическими задачами (из теории дифференциальных и интегральных уравнений, численных методов и др.).",

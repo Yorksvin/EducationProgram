@@ -14,8 +14,8 @@
   "Competence":["ОПК-1", "ОПК-3", "ПК-1", "ПК-6", "ПК-7", "ПК-8"],
 >>>>>>> refs/remotes/origin/main
   "Semester":[
-    {"Id":2,"ZET":2,"VolumeHours":72,"LecturesHours":0,"PracticeHours":32,"LaboratoryHours":0,"PrivateWork":40,"ControlForm":"Зачёт"},
-    {"Id":3,"ZET":3,"VolumeHours":108,"LecturesHours":0,"PracticeHours":32,"LaboratoryHours":0,"PrivateWork":40,"ControlForm":"Экзамен"}
+    {"Id":2,"ZET":2,"VolumeHours":72,"LecturesHours":0,"PracticeHours":32,"LaboratoryHours":0,"SelfWork":40,"ControlForm":"Зачёт"},
+    {"Id":3,"ZET":3,"VolumeHours":108,"LecturesHours":0,"PracticeHours":32,"LaboratoryHours":0,"SelfWork":40,"ControlForm":"Экзамен"}
   ],
 <<<<<<< HEAD
   "Annote":"",  
