@@ -263,6 +263,7 @@ def TableThemeInFOS( dis, p, compdis, zun ):
     s += "|" + str(p) + "." + str( numsub ) + "|" + sub["Title"] + "|" + compdis + "|" + zun + "| "
     if sub["Control"] != "": s += sub["Control"] + ", " + Interval( sub["WeekBegin"],sub["Weeks"] )
     s +="|\n"
+    numsub += 1
   return s
 
 def TableFOS( dis, comp ):
