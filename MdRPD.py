@@ -288,8 +288,8 @@ def TableFOS( dis, comp ):
       s += TableThemeInFOS( dis, p, compdis, zun )
   return s
 
-def FOSElementString( f, n ):
-  res = "### 5.2." + str(n) + ". " + f["Title"] + "\n\n"
+def FOSElementString( f ):
+  res = ""
   if isinstance( f["List"][0], str ):
     for i in range( len( f["List"] ) ):
       res += str( i + 1 ) + ". " + f["List"][i] + "\n"
@@ -357,7 +357,8 @@ def StringForDisc( disfilename, compfilename ):
   res += "\n\n## 5.2. Типовые контрольные задания или иные материалы, необходимые для оценки знаний, умений, навыков и (или) опыта деятельности, характеризующие этапы формирования компетенций в процессе освоения образовательной программы\n"
   n = 1
   for f in dis["FOS"]:
-    res += FOSElementString( f, n )
+    res += "### 5.2." + str(n) + ". " + f["Title"] + "\n\n"  
+    res += FOSElementString( f )
     if f["Criteria"] != "" and f["Scale"] != "":
       res += "#### 5.2." + str(n) + ".1. Критерии оценивания\n"
       res += f["Criteria"]
