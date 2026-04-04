@@ -306,12 +306,50 @@ def FOSElementString( f ):
   elif isinstance( f["List"][0], list ) and isinstance( f["List"][0][1], list ):
 # ВАРИАНТЫ КОНТРОЛЬНЫХ
     for i in range( len( f["List"] ) ):
-      res += "#### " + f["List"][i][0] + "\n"
+      res += "\\subsection{" + f["List"][i][0] + "}\n"
       for j in range( 1, len( f["List"][i] ) ):
-        if f["Unit"] != "": res += f["Unit"] + " № " + str( j ) + "\n"
+        if f["Unit"] != "": res += f["Unit"] + " № " + str( j ) + "\n\n"
         for k in range( len( f["List"][i][j] ) ):
-          res += str( k + 1 ) + ". " + f["List"][i][j][k] + "\n"
-        res += "\n"
+          res += str( k + 1 ) + ". " + f["List"][i][j][k] + "\n\n"
+        res += "\n\n"
+  return res
+
+def StringForFOS( disfilename ):
+  res = r"""
+\documentclass[a4paper,12pt]{article}
+\pagestyle{plain}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancybox}
+\usepackage[unicode, linkcolor=black, pdfborder={ 1 0 0 [1]}, urlcolor=blue]{hyperref}
+
+\textwidth=17cm
+\oddsidemargin=0pt
+\topmargin=-2cm
+\topskip=0pt
+\textheight=26cm
+
+\begin{document}
+"""
+  INP1 = open( disfilename, "r", encoding = "utf-8" )
+  dis = json.load( INP1 )
+  res += "\\title{Задачи, вопросы и пр. по дисциплине <<"+ dis["Name"] +">>}\n\\author{}\n\\date{}\n\\maketitle\n\n"
+  n = 1
+  for f in dis["FOS"]:
+    res += "\\section{" + f["Title"] + "}\n\n"  
+    res += FOSElementString( f )
+    if f["Criteria"] != "" and f["Scale"] != "":
+      res += "\\subsection{Критерии оценивания}\n"
+      res += f["Criteria"]
+      res += "\\subsection{Шкалы оценивания}\n"
+      res += f["Scale"]+"\n\n"
+    n += 1
+  res += "\\end{document}"
   return res
 
 def StringForDisc( disfilename, compfilename ):
@@ -385,6 +423,4 @@ def StringForDisc( disfilename, compfilename ):
   res += "Автор(ы): " + dis["Author"] + "\n"
   return res
 
-#WriteProgram( "JSON010302", "competence010302.json","annot010302.tex" )
-#WriteProgram( "JSON010402", "competence010402Logos.json","annot010402.tex" )
 
