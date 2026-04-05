@@ -12,5 +12,182 @@
   "Aims":"Целью дисциплины является обучение студентов современным технологиям защиты информации, знакомство с программно-аппаратными средствами в виде элек-тронных ключей, изучение основных приемов построения программных систем защи-ты информации. Задачей дисциплины является изучение основ защиты информации в современных вычислительных и телекоммуникационных системах, являющихся базо-выми для построения, тестирования и технической эксплуатации защищенных инфор-мационных систем.",
   "PlaceInStructure":"Дисциплина «Компьютерная безопасность» является базовой (общепрофессио-нальной) частью профессиональной компетенции.",
   "Background":"ПРЕДМЕТЫ, НЕОБХОДИМЫЕ ДЛЯ ОСВОЕНИЯ ДИСЦИПЛИНЫ",
-  "StructureAndContents":""
+  "Section":[
+    {"Title":"РАЗДЕЛ 1", 
+      "Subsection":[
+        {
+          "Title":"ТЕМА 1.1",
+          "LectureHours":0, "PracticeHours":0, "LabHours":0, "SelfWork":0, "WeekBegin":1, "Weeks":1, "Control":"", "MaxBall":"",
+          "LecturesContents":"СОДЕРЖАНИЕЛЕКЦИЙ", "PracticeContents":"СОДЕРЖАНИЕПРАКТИК"
+        },
+        {
+          "Title":"ТЕМА 1.2",
+          "LectureHours":0, "PracticeHours":0, "LabHours":0, "SelfWork":0, "WeekBegin":1, "Weeks":1, "Control":"", "MaxBall":"",
+          "LecturesContents":"СОДЕРЖАНИЕЛЕКЦИЙ", "PracticeContents":"СОДЕРЖАНИЕПРАКТИК"
+        }
+      ]
+    },
+    {"Title":"РАЗДЕЛ 2", 
+      "Subsection":[
+        {
+          "Title":"ТЕМА 2.1",
+          "LectureHours":0, "PracticeHours":0, "LabHours":0, "SelfWork":0, "WeekBegin":1, "Weeks":1, "Control":"", "MaxBall":"",
+          "LecturesContents":"СОДЕРЖАНИЕЛЕКЦИЙ", "PracticeContents":"СОДЕРЖАНИЕПРАКТИК"
+        },
+        {
+          "Title":"ТЕМА 2.2",
+          "LectureHours":0, "PracticeHours":0, "LabHours":0, "SelfWork":0, "WeekBegin":1, "Weeks":1, "Control":"", "MaxBall":"",
+          "LecturesContents":"СОДЕРЖАНИЕЛЕКЦИЙ", "PracticeContents":"СОДЕРЖАНИЕПРАКТИК"
+        }
+      ]
+    },
+    {"Title":"РАЗДЕЛ 3", 
+      "Subsection":[
+        {
+          "Title":"ТЕМА 3.1",
+          "LectureHours":0, "PracticeHours":0, "LabHours":0, "SelfWork":0, "WeekBegin":1, "Weeks":1, "Control":"", "MaxBall":"",
+          "LecturesContents":"СОДЕРЖАНИЕЛЕКЦИЙ", "PracticeContents":"СОДЕРЖАНИЕПРАКТИК"
+        },
+        {
+          "Title":"ТЕМА 3.2",
+          "LectureHours":0, "PracticeHours":0, "LabHours":0, "SelfWork":0, "WeekBegin":1, "Weeks":1, "Control":"", "MaxBall":"",
+          "LecturesContents":"СОДЕРЖАНИЕЛЕКЦИЙ", "PracticeContents":"СОДЕРЖАНИЕПРАКТИК"
+        }
+      ]
+    },
+    {"Title":"РАЗДЕЛ 4", 
+      "Subsection":[
+        {
+          "Title":"ТЕМА 4.1",
+          "LectureHours":0, "PracticeHours":0, "LabHours":0, "SelfWork":0, "WeekBegin":1, "Weeks":1, "Control":"", "MaxBall":"",
+          "LecturesContents":"СОДЕРЖАНИЕЛЕКЦИЙ", "PracticeContents":"СОДЕРЖАНИЕПРАКТИК"
+        },
+        {
+          "Title":"ТЕМА 4.2",
+          "LectureHours":0, "PracticeHours":0, "LabHours":0, "SelfWork":0, "WeekBegin":1, "Weeks":1, "Control":"", "MaxBall":"",
+          "LecturesContents":"СОДЕРЖАНИЕЛЕКЦИЙ", "PracticeContents":"СОДЕРЖАНИЕПРАКТИК"
+        }
+      ]
+    }],
+  "Structure":[
+    "Семестр 1", 
+    1,
+    [{"Control":"Рубежный контроль"}, {"How":{"Week":8, "Form":"", "MaxBall":10}} ],
+    2,
+    [{"Control":"Рубежный контроль"}, {"How":{"Week":16, "Form":"", "MaxBall":10}} ],
+    [{"Control":"Посещаемость"}, {"How":{"Week":"", "Form":"", "MaxBall":5}} ],
+    [{"Control":"Промежуточная аттестация"}, {"How":{"Week":"", "Form":"Зачёт", "MaxBall":50}} ],
+    "Семестр 2", 
+    3,
+    [{"Control":"Рубежный контроль"}, {"How":{"Week":8, "Form":"", "MaxBall":10}} ],
+    4,
+    [{"Control":"Рубежный контроль"}, {"How":{"Week":16, "Form":"", "MaxBall":10}} ],
+    [{"Control":"Посещаемость"}, {"How":{"Week":"", "Form":"", "MaxBall":5}} ],
+    [{"Control":"Промежуточная аттестация"}, {"How":{"Week":"", "Form":"Экзамен", "MaxBall":50}} ]
+  ],
+  "AbbreviationsForControl":"УО -- устный опрос, ДЗ -- домашнее задание, КР -- контрольная работа, КМ -- коллоквиум",
+  "FOSAnnote":"Фонд оценочных средств по дисциплине обеспечивает проверку освоения планируемых результатов обучения (компетенций и их индикаторов) посредством мероприятий текущего, рубежного и промежуточного контроля по дисциплине",
+  "FOS":[
+    {
+      "Title":"Примерные вопросы для устного опроса (УО)",
+      "Unit":"",
+      "List":[
+        "Вопрос 1",
+        "Вопрос 2",
+        "Вопрос 3"
+      ]
+    },
+    {
+      "Title":"Вопросы для зачёта",
+      "Unit":"",
+      "List":[
+        "Вопрос 1",
+        "Вопрос 2",
+        "Вопрос 3"
+      ]
+    },
+    {
+      "Title":"Вопросы для экзамена",
+      "Unit":"",
+      "List":[
+        "Вопрос 1",
+        "Вопрос 2",
+        "Вопрос 3"
+      ]
+    },
+    {
+      "Title":"Варианты контрольных работ (КР)",
+      "Unit":"Вариант",
+      "List":[
+        [
+          "Семестр 1, к/р 1",
+          [ 
+            "Задача 1",
+            "Задача 2"
+          ],
+          [ 
+            "Задача 1",
+            "Задача 2"
+          ]
+        ],
+        [
+          "Семестр 1, к/р 2",
+          [ 
+            "Задача 1",
+            "Задача 2"
+          ],
+          [ 
+            "Задача 1",
+            "Задача 2"
+          ]
+        ]
+      ],
+      "Criteria":"",
+      "Scale":""
+    },
+    {
+      "Title":"Билеты для экзамена",
+      "Unit":"Билет",
+      "List":[
+        [
+          [ 
+            "Вопрос",
+            "Задача"
+          ],
+          [ 
+            "Вопрос",
+            "Задача"
+          ],
+          [ 
+            "Вопрос",
+            "Задача"
+          ]
+        ],
+      ],
+      "Criteria":"",
+      "Scale":""
+    }
+  ],
+  "MethodicalSupport":[
+    {
+      "Title":"Основная литература",
+      "Contents":"1. Учебник-1\n\n2. Учебник-2\n\n3. Задачник"
+    },
+    {
+      "Title":"Дополнительная литература",
+      "Contents":"1. Монография"
+    },
+    {
+      "Title":"Программное обеспечение",
+      "Contents":"Не предусмотрено"
+    },
+    {
+      "Title":"LMS и Интернет-ресурсы",
+      "Contents":"Не предусмотрены"
+    }
+  ],
+  "MaterialSupport":"Не предусмотрено",
+  "EducationalTechnologies":"Не предусмотрено",
+  "MethodicalRecomendations":"",
+  "Author":"ДОЛЖНОСТЬ ФИО" 
 }
